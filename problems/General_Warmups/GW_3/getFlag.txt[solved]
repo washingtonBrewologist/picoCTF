@@ -1,0 +1,12 @@
+ What is 0x3D (base 16) in decimal (base 10). 
+
+[Solution]
+
+	This is another modification to the getFlag.py file.
+
+	#!/bin/bash/env python
+
+	# Will display Decimal value for given base16 value	
+	print "picoCTF{%s}" % int(0x3D)
+	
+

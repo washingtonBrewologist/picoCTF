@@ -1,0 +1,37 @@
+ If I told you your grade was 0x41 in hexadecimal, what would it be in ASCII? 
+
+[Solution]
+
+We could of course look on the web for a hex -> ASCII Calculator but thats
+not what were here to do. The goal is to automate process that can be automated
+whenever possible.
+
+[Possible solutions]
+
+1. Open Python and enter the hex number directly into the interpreter, In 
+our case the hex# is 0x41. Python lets us know this is 65 in decimal. Now if
+you wanted to look at your ASCII table, it would a breeze to find the ASCII
+for the number 65. 
+
+0x41 in HEX == 65 Decimal == 'A' ASCII
+
+
+2. A cooler way to solve this would be to write a simple python script.
+
+	2a. Create getFlag.py and open in an editor
+	2b. The scipt will look like this:
+
+	#!/bin/bash/env python
+
+	# Will display ASCII value for given hex
+	print "picoCTF{%s}" % chr(0x41)
+	
+	2c. Run the script and you should get the following output
+	picoCTF{A}
+
+
+[Solution]
+
+picoCTF{A} 
+
+
