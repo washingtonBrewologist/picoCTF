@@ -1,0 +1,26 @@
+We put together a bunch of resources to help you out on 
+our website! If you go over there, you might even find a 
+flag! 	
+	https://picoctf.com/resources
+
+[Solution]
+
+	insted of just opening the website lets use wget and grep to get
+	what we came for.
+
+	1.) we can use the wget command to scrape the HTML of the website
+	    which will contain the flag were after. We also want to redirect
+	    the output to a file we'll call resourcesHTML.
+
+	2.) wget 'https://picoctf.com/resources' > resourcesHTML
+
+
+	3.) Next to avoid having to dig through all of this html for
+	    our flag we can use grep to do it for us.
+
+		cat resourcesHTML | grep picoCTF{ resourcesHTML
+	
+comandFlow ->->	 cat the file, pipe it to grep. grep searches this file
+		 for the string picoCTG{* 
+
+		(* indicates any thing after)
