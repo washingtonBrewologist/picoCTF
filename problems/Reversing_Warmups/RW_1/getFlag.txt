@@ -1,0 +1,26 @@
+Throughout your journey you will have to run many programs. 
+Can you navigate to 
+/problems/reversing-warmup-1_0_f99f89de33522c93964bdec49fb2b838 
+on the shell server 
+and run this program to retreive the flag? 
+
+
+[ Solution ]
+
+
+	This will require us to download the (run) executable
+	and change the permission settings to allow us X(execute)
+	permission level. Issue the following command:
+	
+	chmod +x <path to run file>
+	
+	we use +x becuase upon running ls -l run we noted that
+	we only had rw- permissions. +x will bring us to rwx.
+	
+	then all we need to do is ./run
+
+[ Flag ]
+
+	
+picoCTF{welc0m3_t0_r3VeRs1nG}
+

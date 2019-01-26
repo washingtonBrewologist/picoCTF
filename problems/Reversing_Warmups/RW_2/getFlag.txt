@@ -1,0 +1,30 @@
+Cryptography doesn't have to be complicated, 
+have you ever heard of something called rot13? 
+
+cvpbPGS{guvf_vf_pelcgb!}
+
+
+[ Solution ]
+
+
+	-rot13 is whats known as a simple letter substituation
+	 cypher that replaces a letter with the 13 letter after
+	 it. It works like this:
+	
+		   [13 letters on top]
+		A B C D E F G H I J K L M
+		
+		  [13 letters on bottom]
+		N O P Q R S T U V W X Y Z
+	
+	Now solving the flag cypher is simple. What ever letter you
+	see in the cipher the solution it refers to the letter directly
+	adjacent to it. 
+
+[ Flag ]
+
+	cvpbPGS{guvf_vf_pelcgb!}
+        
+	picoCTF{this_is_crypto!} 
+
+
